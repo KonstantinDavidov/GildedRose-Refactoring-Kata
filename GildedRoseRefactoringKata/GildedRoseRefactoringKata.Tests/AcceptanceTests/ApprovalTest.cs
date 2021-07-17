@@ -5,7 +5,7 @@ using ApprovalTests;
 using ApprovalTests.Reporters;
 using NUnit.Framework;
 
-namespace GildedRoseRefactoringKata
+namespace GildedRoseRefactoringKata.Tests.AcceptanceTests
 {
 	[UseReporter(typeof(DiffReporter))]
 	[TestFixture]

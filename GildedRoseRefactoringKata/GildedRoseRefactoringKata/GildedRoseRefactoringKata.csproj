@@ -46,9 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Constants.cs" />
+    <Compile Include="Constants\BusinessLogicConfiguration.cs" />
     <Compile Include="GildedRose.cs" />
     <Compile Include="Item.cs" />
+    <Compile Include="ProductStrategies\AgedBrieStrategy.cs" />
+    <Compile Include="ProductStrategies\BackstagePassesStrategy.cs" />
+    <Compile Include="ProductStrategies\BaseProductStrategy.cs" />
+    <Compile Include="ProductStrategies\CommonItemStrategy.cs" />
+    <Compile Include="ProductStrategies\ConjuredStrategy.cs" />
+    <Compile Include="ProductStrategies\StrategyExecutor.cs" />
+    <Compile Include="ProductStrategies\SulfurasStrategy.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

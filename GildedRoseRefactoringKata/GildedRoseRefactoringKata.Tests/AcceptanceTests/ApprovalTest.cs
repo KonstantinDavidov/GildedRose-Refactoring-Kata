@@ -14,13 +14,13 @@ namespace GildedRoseRefactoringKata.Tests.AcceptanceTests
 		[Test]
 		public void ThirtyDays()
 		{
+			var fakeOutput = new StringBuilder();
 
-			StringBuilder fakeoutput = new StringBuilder();
-			Console.SetOut(new StringWriter(fakeoutput));
+			Console.SetOut(new StringWriter(fakeOutput));
 			Console.SetIn(new StringReader("a\n"));
 
 			Program.Main(new string[] { });
-			var output = fakeoutput.ToString();
+			var output = fakeOutput.ToString();
 
 			Approvals.Verify(output);
 		}
